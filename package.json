@@ -1,0 +1,14 @@
+{
+  "name": "node-roast",
+  "version": "1.0.0",
+  "description": "Mommy’s here to support you when you're running Node~ ❤️  \r Let node-mommy brighten your logs and error messages – because mommy knows how amazing you are~ 💞",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "samthedev",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

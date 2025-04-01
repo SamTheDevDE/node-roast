@@ -1,21 +1,17 @@
 {
-  "name": "node-mommy",
+  "name": "node-roast",
   "version": "1.5.1",
-  "main": "mommy.js",
-  "bin": {
-    "node-mommy": "mommy.js"
-  },
+  "main": "roast.js",
   "scripts": {
-    "start": "node mommy.js"
+    "start": "node roast.js"
   },
-  "keywords": [
-    "mommy",
-    "node-mommy"
-  ],
-  "author": "TheCyaniteProject",
-  "license": "MIT",
-  "description": "Mommy's here to help you with node~",
+  "author": "SamTheDev",
+  "license": "GPL-3.0-only",
+  "description": "Node-Roast is here to remind you that some people just shouldn't write code.",
   "devDependencies": {
     "eslint": "^9.23.0"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
   }
 }
