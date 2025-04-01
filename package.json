@@ -1,9 +1,9 @@
 {
   "name": "node-roast",
   "version": "1.5.1",
-  "main": "roast.js",
+  "main": "node-roast.js",
   "scripts": {
-    "start": "node roast.js"
+    "start": "node node-roast.js"
   },
   "author": "SamTheDev",
   "license": "GPL-3.0",
