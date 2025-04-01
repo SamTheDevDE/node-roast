@@ -1,108 +1,61 @@
-# node-mommy
+# Node-Roast
 
-Mommy’s here to support you when you're running Node~ ❤️  
-Let node-mommy brighten your logs and error messages – because mommy knows how amazing you are~ 💞
+**Node-Roast** is a Node.js module that brings humor to your coding errors. Inspired by **cargo-mommy**, it delivers roasts instead of positive affirmations, roasting you for mistakes, bugs, and issues that appear in your code. Whether you're facing a `ReferenceError`, a `SyntaxError`, or just a well-deserved roasting for your general coding misfortune, **Node-Roast** has got your back with some humor to ease the pain!
 
----
+## Features
+
+- **Success Roasts:** Even when your code works, it gets a roast to remind you that *it’s probably a fluke*.
+- **Error Roasts:** Every error comes with a sassy response to let you know that maybe you should rethink your life choices (and your code).
+- **Custom Roasts for Common Errors:** Includes specific roasts for `undefined`, `null`, `syntax`, and `reference` errors.
+- **Graceful Exit Messages:** When you terminate your process, we roast you on your way out. Because why not?
 
 ## Installation
 
-Install node-mommy with npm:
+To use **Node-Roast**, you must have Node.js installed. Then, install it via npm:
 
 ```bash
-npm install node-mommy
+npm install node-roast
 ```
-
-Then, in your application, import and activate it:
-
-```js
-const mommy = require('node-mommy');
-```
-
-From now on, all your `console.log` and `console.error` calls will be replaced with adorable messages from mommy!
-
----
 
 ## Usage
 
-Once node-mommy is required, it intercepts all console messages and swaps them out with heartwarming messages. For example:
+Once installed, just require **Node-Roast** in your code, and it will automatically replace `console.log()` and `console.error()` with the roasting versions.
 
-**Before:**
-
-```js
-console.log("Processing your data...");
-console.error("An error occurred!");
+```javascript
+require('node-roast');
 ```
 
-**After requiring node-mommy, you might see messages like:**
+Now, every time you use `console.log()` or `console.error()`, you'll get a roast! For example:
 
-- "Processing your data...
-  mommy knows you're doing amazing, little girl~ ❤️"
-- "An error occurred!
-  Don't worry, mommy believes in you even when things go wrong!"
+```javascript
+console.log("Your code works!");
+// Output: [SUCCESS] "Wow, it worked! Accident or actual skill? The world may never know."
 
-### Fetching Mommy's Responses
-
-You can now also fetch mommy's responses from your `console.log`/`console.error` commands. This can be useful if you want to display the messages in a custom interface or log them elsewhere. For example:
-
-```js
-// Code snip from kieee's control panel
-const mommyResponse = console.log(message);
-mainWindow.webContents.send('print-log', `${message.trim()}\n${mommyResponse}`, idname);
+console.error("Something went wrong!");
+// Output: [ERROR] "Oops! Looks like your code just took a vacation."
 ```
 
-Simply run your Node.js application as you normally would, and let node-mommy do the rest!
+### Unhandled Rejections & Uncaught Exceptions
 
----
+The module also handles unhandled promise rejections and uncaught exceptions with a roast message. It's the perfect way to deal with those pesky runtime errors!
 
-## Configuration
+```javascript
+process.on("unhandledRejection", (reason) => {
+  console.error("Unhandled rejection: " + reason);
+});
+```
 
-Mommy personalizes her messages using the following environment variables. All of these options can take a `/` separated list, and mommy will randomly select one for each message:
+This will automatically log test messages with success and error roasts.
 
-- **NODE_MOMMYS_LITTLE**  
-  What mommy should call you.  
-  _Default: "girl"_
+## Exit Messages
 
-- **NODE_MOMMYS_PRONOUNS**  
-  Which pronouns mommy uses for herself.  
-  _Default: "her"_
+When you terminate the process using `Ctrl+C` or other methods, you'll be roasted:
 
-- **NODE_MOMMYS_ROLES**  
-  The role mommy will have.  
-  _Default: "mommy"_
+```bash
+SIGINT: Process interrupted! Quitting like a true quitter...
+SIGTERM: Process terminated! Hope your code wasn’t too attached.
+```
 
-- **NODE_MOMMYS_EMOTES**  
-  The emotes mommy will decorate her messages with.  
-  _Default: "❤️/💖/💗/💓/💞"_
+## Conclusion
 
-- **NODE_MOMMYS_MOODS**  
-  The set of responses mommy can use (possible values include "chill" or "ominous").  
-  _Default: "chill"_
-
-Mommy also supports additional variables for controlling the frequency of her messages:
-
-- **NODE_MOMMYS_ATTENTION**  
-  The number of `console.log` messages that can pass before mommy sends another supportive message.  
-  _Default: 1_
-
-- **NODE_MOMMYS_PATIENCE**  
-  The number of `console.error` messages that can pass before mommy chimes in.  
-  _Default: 1_
-
----
-
-## Fallback to cargo-mommy Settings
-
-If you have [cargo-mommy](https://github.com/Gankra/cargo-mommy) installed and its environment variables are set, node-mommy will use those configurations when the corresponding NODE_MOMMYS variables are not defined. For example, if `NODE_MOMMYS_LITTLE` isn't set but `CARGO_MOMMYS_LITTLE` is, then mommy will call you the value set in `CARGO_MOMMYS_LITTLE`.
-
----
-
-## Licensing
-
-node-mommy is licensed under the GNU General Public License version 3 (GPLv3). Mommy loves freedom, and so do we~ ❤️
-
----
-
-## Have Fun!
-
-Let node-mommy sprinkle your logs with love and support – because you deserve nothing less than all the care in the world!
+**Node-Roast** is a fun, humorous way to bring some light into the usually painful world of debugging. Next time your code throws an error or works perfectly, at least you'll get a good laugh! Enjoy the roasts, and maybe learn something along the way.
