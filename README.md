@@ -1,6 +1,6 @@
 # Node-Roast
 
-**Node-Roast** is a Node.js module that brings humor to your coding errors. Inspired by **cargo-mommy**, it delivers roasts instead of positive affirmations, roasting you for mistakes, bugs, and issues that appear in your code. Whether you're facing a `ReferenceError`, a `SyntaxError`, or just a well-deserved roasting for your general coding misfortune, **Node-Roast** has got your back with some humor to ease the pain!
+**Node-Roast** is a Node.js module that brings humor to your coding errors. Inspired by **node-mommy** and **cargo-mommy**, it delivers roasts instead of positive affirmations, roasting you for mistakes, bugs, and issues that appear in your code. Whether you're facing a `ReferenceError`, a `SyntaxError`, or just a well-deserved roasting for your general coding misfortune, **Node-Roast** has got your back with some humor to ease the pain!
 
 ## Features
 
