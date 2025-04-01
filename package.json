@@ -1,13 +1,16 @@
 {
   "name": "node-roast",
-  "version": "1.0.0",
-  "description": "Mommy’s here to support you when you're running Node~ ❤️  \r Let node-mommy brighten your logs and error messages – because mommy knows how amazing you are~ 💞",
-  "main": "test.js",
+  "version": "1.5.1",
+  "main": "roast.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node roast.js"
   },
-  "author": "samthedev",
-  "license": "ISC",
+  "author": "SamTheDev",
+  "license": "GPL-3.0-only",
+  "description": "Node-Roast is here to remind you that some people just shouldn't write code.",
+  "devDependencies": {
+    "eslint": "^9.23.0"
+  },
   "dependencies": {
     "colors": "^1.4.0"
   }
